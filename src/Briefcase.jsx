@@ -15,7 +15,7 @@ function Briefcase() {
         <Navbar />
         
             <h1 className="text-center text-ligth text-xl name bg-primary p-5 bgh1 p-10 ">Hello i'm <span className='italic text-info'>Ramiro Gumma</span> Fronted Developer</h1>
-                <div className="bg-primary p-20 text-white">
+                <div className="bg-dark p-20 text-white">
                      <div className="grid grid-cols-2 gap-x-96">
                         <div>Lenguages <span className="text-secondary">|knowledge</span></div>                       
                         <div>Herramientas <span className="text-secondary">|Tools</span></div>
@@ -53,7 +53,7 @@ function Briefcase() {
                        
                 </div>  
                 
-        {/* PRYECTOS */}
+        {/* PROYECTOS */}
 
            <div className='bg-dark'><h2 className='text-center text-xl text-white bg-primary w-11/12 m-auto rounded-lg '>Proyectos <span className='text-secondary'>| Experience</span></h2></div> 
             <div className= 'grid bg-dark grid-cols-2 gap-5 pt-5 '>
@@ -67,6 +67,8 @@ function Briefcase() {
                 </div>
 
             </div>
+
+       
         </>
     )
 }
