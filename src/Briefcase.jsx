@@ -12,63 +12,70 @@ function Briefcase() {
 
     return (
         <>
+        <div className='bg-gradient-to-b from-dark to-obscure py-10'>
         <Navbar />
-        
-            <h1 className="text-center text-ligth text-xl name bg-primary p-5 bgh1 p-10 ">Hello i'm <span className='italic text-info'>Ramiro Gumma</span> Fronted Developer</h1>
-                <div className="bg-dark p-20 text-white">
-                     <div className="grid grid-cols-2 gap-x-96">
-                        <div>Lenguages <span className="text-secondary">|knowledge</span></div>                       
-                        <div>Herramientas <span className="text-secondary">|Tools</span></div>
-                      </div>           
-                                          
-                        <div className="grid grid-cols-2 gap-x-96 mt-10">
-                            <div className="grid grid-cols-3 gap-5">
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={css} alt="" />
-                                    <h3>Css</h3>
-                                </div>
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={js} alt="" />
-                                    <h3>Javascript</h3>
-                                </div>
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={html} alt="" />
-                                    <h3>Html</h3>
-                                </div>
-                               <div><img className="w-20 h-20 hover:scale-125 duration-75" src={react} alt="" />
-                                    <h3>React</h3>
-                                </div> 
+                {/* Subtitulo */}
+                <div className='font-bold text-6xl pt-40 pl-48 grid grid-cols-3'>
+                     <div className=" franklin">              
+                        <h2 className='text-infor'>Skills</h2>
+                      </div>  
+                        <span className='pl-10 text-primary '>//</span>
+                      <div className='inconsolota'>
+                        <h2>Tools</h2>
+                       </div>         
+                </div>         
+
+                <div className='w-11/12 text-justify m-auto p-20'>
+
+                   <div><h2 className='franklin font-medium text-white text-lg'>Lorem ipsum dolor,<br /> sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
+
+                </div>
+
+                   
+                        <div className="grid grid-cols-2 gap-10 gap-x-52 px-32 py-10">
+                            <div className="grid grid-cols-2">
+                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={css} alt="" />
+                                    </div>
+                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={js} alt="" />
+                                    </div>
+                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={html} alt="" />
+                                    </div>
+                               <div><img className="w-32 h-28 hover:scale-125 duration-75" src={react} alt="" />
+                                    </div> 
                             </div> 
 
-                            <div className="grid grid-cols-3 gap-5">
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={github} alt="" />
-                                    <h3>GitHub</h3>
-                                </div>
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={git} alt="" />
-                                    <h3>Git</h3>
-                                </div>
-                                <div><img className="w-20 h-20 hover:scale-125 duration-75" src={tailwind} alt="" />
-                                    <h3>Tailwind</h3>
-                                </div>
+                            <div className="grid grid-cols-2 gap-5  ">
+                                <div><img className="w-32 h-32 hover:scale-125 duration-75" src={github} alt="" />
+                                 </div>
+                                <div><img className="w-32 h-32 hover:scale-125 duration-75" src={git} alt="" />
+                                    </div>
+                                <div className='ml-13 pl-5'><img className="ml-20 w-32 h-32 hover:scale-125 duration-75" src={tailwind} alt="" />
+                                    </div>
                             </div>
                       </div>
-                     
+
                        
-                </div>  
+        </div> 
+                    
                 
         {/* PROYECTOS */}
 
-           <div className='bg-dark'><h2 className='text-center text-xl text-white bg-primary w-11/12 m-auto rounded-lg '>Proyectos <span className='text-secondary'>| Experience</span></h2></div> 
-            <div className= 'grid bg-dark grid-cols-2 gap-5 pt-5 '>
+           {/* <div className=''><h2 className='text-center text-xl text-white w-11/12 m-auto rounded-lg '>Proyectos <span className='text-secondary'>| Experience</span></h2></div>  */}
+            {/* <div className= 'grid grid-cols-2 gap-5 pt-5 '> */}
                  {/* DevOps News */}
-                <div>
+                {/* <div>
                     <img className='border-solid border-ligth border-2 m-auto w-4/5 cursor-pointer hover:scale-105 duration-75' src={devops} alt="" />
-                </div>
+                </div> */}
                 {/* App Product */}
-                <div>
+                {/* <div>
                     <img className='border-solid border-ligth border-2 m-auto w-4/5 cursor-pointer hover:scale-105 duration-75' src={appproduct} alt="" />
-                </div>
+                </div> */}
 
-            </div>
+            {/* </div> */}
 
-       
+        {/* </div>  */}
+
+        
         </>
     )
 }

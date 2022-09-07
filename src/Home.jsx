@@ -3,22 +3,23 @@ import Navbar from "./nav-bar";
 import { Link } from "react-router-dom";
 
 
+
 function Home() {
 return(
     <>
     <div className='background-home'>
         <Navbar />
         
-            <div className=' text-left text-white  p-60 pl-20 '>
-                <h1 className='text-6xl  pb-20 franklin font-bold'>Welcome,<br />I'm <span className='text-info'>Ramiro Gumma</span> </h1>
-                <h2 className='text-2xl inconsolota'>I'm a <span className='text-info'>Front-End Developer</span> - Based in Buenos Aires</h2>
+            <div className=' text-left text-white p-64 pl-20 '>
+                <h1 className='text-6xl  pb-20 franklin font-bold'>Welcome,<br />I'm <span className='text-infor'>Ramiro Gumma</span> </h1>
+                <h2 className='text-2xl inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
         
             </div>
-
+     </div>
             {/* FOOTER */}
             <footer>
-                <div className='grid grid-cols-2 gap-5 justify-items-center bg-primary border-2 border-dark'>
-                    <div className='mt-5 p-5'>
+                <div className='grid grid-cols-2 gap-5 justify-items-center bg-gradient-to-t from-dark to-obscure pt-72 '>
+                    <div className=''>
                         <ul>
                             <label className='text-lg m-5'> <span className='text-dark'>|</span> Secciones </label>
                             <hr />
@@ -33,7 +34,7 @@ return(
                             </li>
                         </ul>
                     </div>
-                    <div className='mt-5 p-5'>
+                    <div className='pb-10'>
                     <ul>
                         <label className='text-lg m-5'> <span className='text-dark'>|</span> Redes Personales </label>
                         <hr />
@@ -52,10 +53,10 @@ return(
                 </div>
 
                 <div className='bg-dark text-white text-center p-5'>
-                    <p>©Copyrigth Ramiro Gumma</p>
+                    <p>©Copyrigth Ramiro Gumma <span className='text-info'>|</span> Designed by Josefina Ritter</p>
                 </div>
             </footer>
-    </div>
+    
     </>
 )}
 
