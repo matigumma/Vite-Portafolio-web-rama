@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from "./nav-bar";
 import { Link } from "react-router-dom";
-
+import logo from './img/logo.png'
 
 
 function Home() {
@@ -17,45 +17,25 @@ return(
             </div>
      </div>
             {/* FOOTER */}
-            <footer>
-                <div className='grid grid-cols-2 gap-5 justify-items-center bg-gradient-to-t from-dark to-obscure pt-72 '>
-                    <div className=''>
-                        <ul>
-                            <label className='text-lg m-5'> <span className='text-dark'>|</span> Secciones </label>
-                            <hr />
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <Link to="contactme">Contact Me</Link>
-                            </li>
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <Link to="aboutme">About Me</Link>
-                            </li>
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <Link to="briefcase">Briefcase <span className='text-2xl text-info'>|</span> Portafolio</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='pb-10'>
-                    <ul>
-                        <label className='text-lg m-5'> <span className='text-dark'>|</span> Redes Personales </label>
-                        <hr />
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <a href="https://github.com/Hamipluf" target="BLANK">GitHub</a>
-                            </li>
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <a href="linkedin.com/in/ramiro-gabriel-gumma-400993240" target="BLANK">Linkedin</a>
-                            </li>
-                            <li className='p-5 m-3 hover:underline hover:decoration-1 hover:underline-offset-4'>
-                                <a href="https://www.instagram.com/ramaa_gmm/" target="BLANK">Instagram</a>
-                            </li>
-                        </ul>
-
-                    </div>
+            <footer className="footer bg-gradient-to-b from-obscure to-primary p-10 text-base-content">
+                <div>
+                    <img src={logo} className="h-20 w-16"/>                    
+                    <p>Copyright © 2022 - All right reserved by Ramiro GUmma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
+                </div> 
+                <div>
+                    <span className="footer-title">Company</span> 
+                    <Link className='links' to="abaoutme"> About me</Link> 
+                    <Link className='links' to="/">Home</Link>
+                    <Link className='links' to="/contactme">Contact Me</Link>
+                    <Link className='links' to="/briefcase">Briefcase</Link>
+                </div> 
+                <div>
+                    <span className="footer-title">Social</span> 
+                    <a href='https://www.linkedin.com/in/ramiro-gabriel-gumma-400993240/' target="BLANK"className="links">Linkedin</a> 
+                    <a href='https://github.com/Hamipluf' target="BLANK"className="links">Github</a> 
+                    <a href='https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a' target="BLANK"className="links">Workana</a>
                 </div>
-
-                <div className='bg-dark text-white text-center p-5'>
-                    <p>©Copyrigth Ramiro Gumma <span className='text-info'>|</span> Designed by Josefina Ritter</p>
-                </div>
-            </footer>
+</footer>
     
     </>
 )}

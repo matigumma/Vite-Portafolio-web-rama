@@ -2,19 +2,35 @@ import Navbar from "./nav-bar"
 function Contactme (){
     return(
         <>
-        <Navbar />     
-        <hr />
-        <div className="bg-primary pt-10">
-            <div className="w-4/5 m-auto">
-                <form className="flex flex-col">
-                    <input className="p-5 border-4 rounded-sm m-2" type="text" name="nombre" placeholder="Nombre"/>
-                    <input className="p-5 border-4 rounded-sm m-2" type="text" name="apellido" placeholder="Apellido"/>
-                    <input className="p-5 border-4 rounded-sm m-2" type="text" name="asunto" placeholder="Asunto" />
-                    <textarea className="mt-5" name="mensaje" id="" cols="10" rows="6" placeholder="Escribe aqui tu mensaje"></textarea>
-                    <button className="btn btn-info btn-lg">Enviar</button>
-                </form>            
-            </div>
-         </div>
+        <Navbar />    
+        
+        <div className="flex flex-col justify-end m-32 ">
+        <div className="form-control w-full max-w-xs ">
+            <label className="label">
+                <span className="label-text">What is your name?</span>
+                
+            </label>
+            <input type="text" placeholder="Ramiro" className="input input-bordered w-full max-w-xs input-lg focus:border-infor " />
+
+            <label className="label">
+                <span className="label-text">What is your Email?</span>
+                
+            </label>
+            <input type="text" placeholder="example@hotmail.com" className="input input-bordered focus:border-infor w-full max-w-xs input-lg" />
+
+            <label className="label">
+                <span className="label-text">What is your asunt?</span>
+                
+            </label>
+            <input type="text" placeholder="Asunto" className="input input-bordered w-full max-w-xs input-lg focus:border-infor" />
+
+            <textarea  className="textarea textarea-ghost mt-10 focus:border-infor" placeholder="Message"></textarea>
+            
+
+        
+                    
+        </div>
+        </div>
         </>
 
     )}
