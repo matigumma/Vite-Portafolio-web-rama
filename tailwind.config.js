@@ -3,6 +3,19 @@ module.exports = {
   content: ["./src/**"],
   theme: {
     extend: {
+      screens: {
+        'sm': '425px',
+        // => @media (min-width: 425px) { ... }
+  
+        'md': '770px',
+        // => @media (min-width: 770px) { ... }
+
+        'md-m': {'max': '768px'},
+      // => @media (max-width: 768px) { ... }
+  
+        'lg': '1440px',
+        // => @media (min-width: 1440px) { ... }
+      },
       colors: {
         'primary': '#020F59',
         'secondary':'#248EA6',

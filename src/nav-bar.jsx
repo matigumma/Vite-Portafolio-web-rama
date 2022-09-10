@@ -3,8 +3,8 @@ import logo from './img/logo.png'
 
 const Navbar = () => {
   return(
-   <>   
-<div className='text-sm pr-5 franklin font-bold text-white fixed top-0 left-0 right-20'>
+   <>      
+<div className='text-sm pr-5 franklin font-bold text-white fixed top-0 left-0 right-20 md-m:hidden'>
    <div className="h-8 w-10 ml-5 pt-3"> <Link to="/"> <img src={logo} alt="Logo Ramiro Gumma frontend developer" /></Link></div>
       <ul className="flex flex-row gap-2 justify-end">
     <li className="px-5 links" ><Link to="/">Home</Link></li>
