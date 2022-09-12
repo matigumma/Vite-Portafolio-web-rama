@@ -8,14 +8,16 @@ import tailwind from './img/Tailwind.png'
 import devops from './img/DevOps News 1.png'
 import appproduct from './img/appproduct.png'
 import Navbar from './nav-bar'
+import Navbar_responsive from './Nav-bar-responsive'
 function Briefcase() {
 
     return (
         <>
-        <div className='bg-gradient-to-b from-dark to-obscure py-10'>
+        <div className='bg-gradient-to-b from-dark to-obscure'>
         <Navbar />
+        <Navbar_responsive />
                 {/* Subtitulo */}
-                <div className='font-bold text-6xl pt-40 pl-48 grid grid-cols-3'>
+                <div className='font-bold text-2xl pt-40 pl-16 grid grid-cols-3'>
                      <div className=" franklin">              
                         <h2 className='text-infor'>Skills</h2>
                       </div>  
@@ -25,31 +27,31 @@ function Briefcase() {
                        </div>         
                 </div>         
 
-                <div className='w-11/12 text-justify m-auto p-20'>
+                <div className='w-11/12 text-justify m-auto pt-16'>
 
-                   <div><h2 className='franklin font-medium text-white text-lg'>Lorem ipsum dolor,<br /> sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
+                   <div><h2 className='franklin font-medium text-white text-xs'>Lorem ipsum dolor,<br /> sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
 
                 </div>
 
                    
-                        <div className="grid grid-cols-2 gap-10 gap-x-52 px-32 py-10">
-                            <div className="grid grid-cols-2">
-                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={css} alt="" />
+                        <div className="grid grid-cols-2 m-8 gap-x-10 pb-16">
+                            <div className="grid grid-cols-2 gap-10">
+                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={css} alt="" />
                                     </div>
-                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={js} alt="" />
+                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={js} alt="" />
                                     </div>
-                                <div><img className="w-32 h-28 hover:scale-125 duration-75" src={html} alt="" />
+                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={html} alt="" />
                                     </div>
-                               <div><img className="w-32 h-28 hover:scale-125 duration-75" src={react} alt="" />
+                               <div><img className="w-16 h-16 active:scale-125 duration-75" src={react} alt="" />
                                     </div> 
                             </div> 
 
-                            <div className="grid grid-cols-2 gap-5  ">
-                                <div><img className="w-32 h-32 hover:scale-125 duration-75" src={github} alt="" />
+                            <div className="grid grid-cols-2 gap-10">
+                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={github} alt="" />
                                  </div>
-                                <div><img className="w-32 h-32 hover:scale-125 duration-75" src={git} alt="" />
+                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={git} alt="" />
                                     </div>
-                                <div className='ml-13 pl-5'><img className="ml-20 w-32 h-32 hover:scale-125 duration-75" src={tailwind} alt="" />
+                                <div className=''><img className="ml-16 w-16 h-16 hover:scale-125 duration-75" src={tailwind} alt="" />
                                     </div>
                             </div>
                       </div>

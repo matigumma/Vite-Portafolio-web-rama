@@ -25,17 +25,6 @@
     font-family: 'Inconsolata', monospace;
 }
 
-
-.bgh1{
-    background: url(./img/banner.jpg) center center/cover;
-    background-attachment: fixed;
-}
-
-.navbar{
-    background: url(./img/image.png) center center/cover;
-    filter:opacity(.9)
-}
-
 .links{
     position: relative;
     display: inline-block;

@@ -4,7 +4,7 @@ import logo from './img/logo.png'
 const Footer = () => {
     return(
     <>
-    <footer className="footer bg-gradient-to-b from-obscure to-primary p-10 text-base-content">
+    <footer className="footer bg-gradient-to-b from-obscure to-primary p-10 text-base-content pt-20">
     <div>
         <img src={logo} className="h-20 w-16"/>                    
         <p>Copyright © 2022 - All right reserved by Ramiro GUmma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
