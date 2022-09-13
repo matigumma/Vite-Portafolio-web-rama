@@ -13,14 +13,13 @@ return(
     <Navbar_responsive />
         <Navbar />
         
-            <div className=' text-left text-white p-10 pt-36'>
-                <h1 className='text-4xl  pb-20 franklin font-bold'>Welcome,<br />I'm <span className='text-infor'>Ramiro Gumma</span> </h1>
-                <h2 className='text-md pb-20 inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
+            <div className='w-11/12 p-5 m-auto text-left text-white pt-36'>
+                <h1 className='pb-20 text-4xl font-bold franklin'>Welcome,<br />I'm <span className='text-infor'>Ramiro Gumma</span> </h1>
+                <h2 className='pb-20 text-md inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
         
             </div>
      </div>
-            {/* FOOTER */}
-             
+                         
         <Footer />
     </>
 )}
