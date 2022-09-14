@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="w-full p-10 pt-20 footer text-base-content bg-gradient-to-b from-obscure to-primary ">
     <div>
         <img src={logo} className="w-16 h-20"/>                    
-        <p>Copyright © 2022 - All right reserved by Ramiro GUmma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
+        <p>Copyright © 2022 - All right reserved by Ramiro Gumma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
     </div> 
     <div>
         <span className="footer-title">Company</span> 
-        <Link className='links' to="abaoutme"> About me</Link> 
+        <Link className='links' to="/aboutme"> About me</Link> 
         <Link className='links' to="/">Home</Link>
         <Link className='links' to="/contactme">Contact Me</Link>
         <Link className='links' to="/briefcase">Briefcase</Link>

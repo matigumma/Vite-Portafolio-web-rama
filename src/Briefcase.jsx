@@ -5,72 +5,72 @@ import react from './img/react.png'
 import github from './img/github.png'
 import git from './img/git.png'
 import tailwind from './img/Tailwind.png'
-import devops from './img/DevOps News 1.png'
-import appproduct from './img/appproduct.png'
-import Navbar from './nav-bar'
+// import devops from './img/DevOps News 1.png'
+// import appproduct from './img/appproduct.png'
 import Navbar_responsive from './Nav-bar-responsive'
 function Briefcase() {
 
     return (
         <>
         <div className='bg-gradient-to-b from-dark to-obscure'>
-        <Navbar />
-        <Navbar_responsive />
-                {/* Subtitulo */}
-                <div className='font-bold text-2xl pt-40 pl-16 grid grid-cols-3'>
-                     <div className=" franklin">              
-                        <h2 className='text-infor'>Skills</h2>
-                      </div>  
-                        <span className='pl-10 text-primary '>//</span>
-                      <div className='inconsolota'>
-                        <h2>Tools</h2>
-                       </div>         
-                </div>         
-
-                <div className='w-11/12 text-justify m-auto pt-16'>
-
-                   <div><h2 className='franklin font-medium text-white text-xs'>Lorem ipsum dolor,<br /> sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
-
+            <Navbar_responsive />
+                {/*SLILLS*/}
+              
+                <div className="pt-32 pl-10 text-4xl font-extrabold text">              
+                        <h2 className='franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Skills</h2>
                 </div>
 
-                   
-                        <div className="grid grid-cols-2 m-8 gap-x-10 pb-16">
-                            <div className="grid grid-cols-2 gap-10">
-                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={css} alt="" />
-                                    </div>
-                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={js} alt="" />
-                                    </div>
-                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={html} alt="" />
-                                    </div>
-                               <div><img className="w-16 h-16 active:scale-125 duration-75" src={react} alt="" />
-                                    </div> 
-                            </div> 
+                <div className='w-11/12 pt-16 m-auto text-justify'>
+                    <div><p className='text-xs font-medium leading-relaxed text-white franklin'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam eum natus perferendis similique tempora quod, modi odit repellendus laboriosam dicta, quam vel molestias odio, doloribus ad illum nesciunt placeat..</p></div>
+                </div>                   
+                        
+                 <div className="grid grid-cols-2 gap-5 pt-10 gap-y-10 justify-items-center">
+                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={css} alt="" />
+                      </div>
+                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={js} alt="" />
+                      </div>
+                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={html} alt="" />
+                      </div>
+                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={react} alt="" />
+                      </div> 
+                 </div>      
 
-                            <div className="grid grid-cols-2 gap-10">
-                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={github} alt="" />
+                  {/*TOOLS*/}
+                  <div className="pt-32 pl-10 text-4xl font-extrabold text">              
+                        <h2 className='franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Tools</h2>
+                </div>
+
+                <div className='w-11/12 pt-16 m-auto text-justify'>
+                    <div><h2 className='text-xs font-medium text-white franklin'>Lorem ipsum dolor,<br /> 
+                    sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
+                </div>
+
+                <div className="grid grid-cols-3 p-5 pt-10 justify-items-center">
+                                <div><img className="w-16 h-16 duration-75 active:scale-125" src={github} alt="" />
                                  </div>
-                                <div><img className="w-16 h-16 active:scale-125 duration-75" src={git} alt="" />
+                                <div><img className="w-16 h-16 duration-75 active:scale-125" src={git} alt="" />
                                     </div>
-                                <div className=''><img className="ml-16 w-16 h-16 hover:scale-125 duration-75" src={tailwind} alt="" />
+                                <div className=''><img className="w-16 h-16 duration-75 hover:scale-125" src={tailwind} alt="" />
                                     </div>
                             </div>
-                      </div>
 
+                
+                       
                        
         </div> 
                     
                 
         {/* PROYECTOS */}
 
-           {/* <div className=''><h2 className='text-center text-xl text-white w-11/12 m-auto rounded-lg '>Proyectos <span className='text-secondary'>| Experience</span></h2></div>  */}
+           {/* <div className=''><h2 className='w-11/12 m-auto text-xl text-center text-white rounded-lg '>Proyectos <span className='text-secondary'>| Experience</span></h2></div>  */}
             {/* <div className= 'grid grid-cols-2 gap-5 pt-5 '> */}
                  {/* DevOps News */}
                 {/* <div>
-                    <img className='border-solid border-ligth border-2 m-auto w-4/5 cursor-pointer hover:scale-105 duration-75' src={devops} alt="" />
+                    <img className='w-4/5 m-auto duration-75 border-2 border-solid cursor-pointer border-ligth hover:scale-105' src={devops} alt="" />
                 </div> */}
                 {/* App Product */}
                 {/* <div>
-                    <img className='border-solid border-ligth border-2 m-auto w-4/5 cursor-pointer hover:scale-105 duration-75' src={appproduct} alt="" />
+                    <img className='w-4/5 m-auto duration-75 border-2 border-solid cursor-pointer border-ligth hover:scale-105' src={appproduct} alt="" />
                 </div> */}
 
             {/* </div> */}

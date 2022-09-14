@@ -1,36 +1,34 @@
-import Navbar from "./nav-bar"
 import Footer from "./Footer"
 import Navbar_responsive from "./Nav-bar-responsive"
 const Contactme = () => {
     return(
         <>
               
-            <div className="bg-gradient-to-b from-dark to-obscure h-screen">
+            <div className="h-screen bg-gradient-to-b from-dark to-obscure">
             <Navbar_responsive />
-            <Navbar />  
-                
-                <div className="  ">
-                <div className="form-control w-full max-w-xs">
+                        
+                <div className="pt-20 ">
+                <div className="ml-3 form-control">
                     <label className="label">
-                        <span className="ml-16 label-text text-ligth franklin">What is your name?</span>
+                        <span className="label-text text-ligth franklin">What is your name?</span>
                         
                     </label>
-                    <input type="text" placeholder="Ramiro" className=" ml-16 input input-bordered w-full max-w-xs input-lg focus:border-infor " />
+                    <input type="text" placeholder="Ramiro" className="w-full max-w-xs input input-bordered input-lg focus:border-infor" />
 
                     <label className="label">
-                        <span className="ml-16 label-text text-ligth franklin">What is your Email?</span>
+                        <span className="label-text text-ligth franklin">What is your Email?</span>
                         
                     </label>
-                    <input type="text" placeholder="example@hotmail.com" className=" ml-16 input input-bordered focus:border-infor w-full max-w-xs input-lg" />
+                    <input type="text" placeholder="example@hotmail.com" className="w-full max-w-xs input input-bordered focus:border-infor input-lg" />
 
                     <label className="label">
-                        <span className="ml-16 label-text text-ligth franklin">What is the asunt?</span>
+                        <span className="label-text text-ligth franklin">Wath is your Subjet?</span>
                         
                     </label>
-                    <input type="text" placeholder="Asunto" className=" ml-16 input input-bordered w-full max-w-xs input-lg focus:border-infor" />
+                    <input type="text" placeholder="Subjet" className="max-w-xs input input-bordered input-lg focus:border-infor" />
 
-                    <textarea  className="ml-16 textarea textarea-ghost mt-10 p-10 focus:border-infor" placeholder="Message"></textarea><br />
-                    <button className="btn btn-lg ml-16 sm:btn-sm md:btn-md lg:btn-lg ">Submit</button>
+                    <textarea  className= "p-5 mt-10  border-secondary textarea textarea-ghost focus:border-infor" placeholder="Message"></textarea><br />
+                    <button className="m-2 btn btn-lg sm:btn-sm md:btn-md lg:btn-lg">Submit</button>
                 </div>
                 </div>
                 

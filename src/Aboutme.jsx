@@ -1,23 +1,31 @@
-import Navbar from "./nav-bar"
 import Navbar_responsive from "./Nav-bar-responsive"
+import foto_rama_1 from "./img/foto-rama-1.png"
 function Aboutme () {
     return(
         <>
+        < Navbar_responsive />
         <div className="bg-gradient-to-b from-dark to-obscure">
-            <Navbar />
-            < Navbar_responsive />
-        <div className=" text-white p-10 leading-8 tracking-wide">
-                <p>
-                <span className="text-info text-3xl">|</span> Poseo 1 año de experiencia con los lenguajes de HTML5, 
-                JavaScript(ES6), CSS3. Se usar las tecnologías de Bootstrap, optimización de SEO, trabajo con Responsive Web Design. Soy estudiante de la Ciudad de Buenos Aires en Full-stack developer(node.js) y me encuentro en búsqueda de mi primer empleo como desarrollador. Tengo disponibilidad para entregarte el trabajo en 10 días, a lo cual va poder ver el avance y solicitar modificaciones, además le ofrezco si le llega a interesar mantenimiento de la Web. Soy responsable y profesional
-                </p>
-        </div>
-        <hr />
-            <div className="text-white p-10 leading-8 tracking-wide">
-                <p>
-                <span className="text-info text-3xl">|</span> I have 1 year of experience with the languages of JavaScript(ES6), HTML5 and CSS. I can work with Bootstrap technologies, SEO optimization, Responsive Web Design. I am a Full-stack developer(node.js) student from Buenos Aires and I am looking for my first job as a developer. I am focused and diligent when managing workloads and prioritizing tasks to meet deadlines. I thrive in environments where I am able to make a direct impact, utilizing abilities in HTML5, CSS and complex problem-solving to find solutions and achieve result. Thank you for visiting my web portfolio
-                </p>
+            <div className="grid w-full grid-cols-3 pt-20 justify-items-center ">         
+            <div className="col-span-2 pt-20"><h2 className="text-4xl font-extrabold text-center text-white franklin">Get to <span className="text-infor">know me better</span> </h2></div>
+            <div className="m-5 justify-self-center">
+                <img className="w-24" src={foto_rama_1} />
             </div>
+        </div>
+            
+                <div className="p-5 pt-10 text-sm font-normal tracking-wide text-left text-white franklin">
+                    <div className="">
+                            <p>
+                        <span className="text-3xl text-ligth">|</span> I am a Frontend Developer, with studies in Buenos Aires, I study independently, I have certifications in both workana and linkedin, besides being a student in full-stack course with node.js. I work with HTML, CSS and Javascript, I also use React, Tailwind and Bootstrap technologies, I adapt to agile development methodologies in order to always find the best solution to the company's problems.
+                            </p>
+                        </div>  
+                        <div className="my-5 ">
+                            <p>
+                            <span className="text-2xl text-ligth">|</span>Soy Frontend Developer, con estudios en Buenos Aires, estudio de forma autónoma, poseo certificaciones tanto en workana y linkedin, además de ser estudiante en curso de full-stack con node.js. Trabajo con HTML, CSS y Javascript, también utilizo las tecnologias de React, Tailwind y Bootstrap, me adapto a metodologías agiles de desarrollo para poder siempre encontrar la mejor solución a los problemas de la empresa
+                            </p>
+                        </div>
+                              
+                </div>
+            
         </div>
         </>
     )}
