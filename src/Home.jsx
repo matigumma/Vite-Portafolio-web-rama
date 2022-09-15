@@ -13,8 +13,8 @@ return(
     
         
             <div className='w-11/12 p-5 pt-48 m-auto text-left text-white'>
-                <h1 className='pb-20 text-4xl font-bold franklin'>Welcome,<br />I'm <span className='text-infor'>Ramiro Gumma</span> </h1>
-                <h2 className='pb-48 text-md inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
+                <h1 className='pb-20 text-4xl lg:text-8xl lg:pt-36 font-bold franklin'> <span className='italic'>Welcome</span> <br />I'm <span className='text-infor'>Ramiro Gumma</span> </h1>
+                <h2 className='pb-48 lg:text-2xl text-md inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
         
             </div>
      </div>

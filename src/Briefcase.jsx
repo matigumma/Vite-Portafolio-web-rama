@@ -8,49 +8,51 @@ import tailwind from './img/Tailwind.png'
 // import devops from './img/DevOps News 1.png'
 // import appproduct from './img/appproduct.png'
 import Navbar_responsive from './Nav-bar-responsive'
+import Footer from './Footer'
 function Briefcase() {
 
     return (
         <>
+        <Navbar_responsive />
         <div className='bg-gradient-to-b from-dark to-obscure'>
-            <Navbar_responsive />
+            
                 {/*SLILLS*/}
               
-                <div className="pt-32 pl-10 text-4xl font-extrabold text">              
-                        <h2 className='franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Skills</h2>
+                <div className="pt-32 pl-10">              
+                        <h2 className=' text-4xl lg:text-6xl franklin font-extrabold text-infor'> <span className='text-2xl text text-ligth'>//</span> Skills</h2>
                 </div>
 
-                <div className='w-11/12 pt-16 m-auto text-justify'>
-                    <div><p className='text-xs font-medium leading-relaxed text-white franklin'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam eum natus perferendis similique tempora quod, modi odit repellendus laboriosam dicta, quam vel molestias odio, doloribus ad illum nesciunt placeat..</p></div>
+                <div className='w-11/12  pt-16 m-auto text-justify'>
+                    <p className='text-xs lg:text-xl font-medium leading-relaxed text-white franklin'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam eum natus perferendis similique tempora quod, modi odit repellendus laboriosam dicta, quam vel molestias odio, doloribus ad illum nesciunt placeat..</p>
                 </div>                   
                         
                  <div className="grid grid-cols-2 gap-5 pt-10 gap-y-10 justify-items-center">
-                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={css} alt="" />
+                      <div><img className="lg:w-28 lg:h-28 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={css} alt="" />
                       </div>
-                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={js} alt="" />
+                      <div><img className="lg:w-28 lg:h-28 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={js} alt="" />
                       </div>
-                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={html} alt="" />
+                      <div><img className="lg:w-28 lg:h-28 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={html} alt="" />
                       </div>
-                      <div><img className="w-16 h-16 duration-75 active:scale-125" src={react} alt="" />
+                      <div><img className="lg:w-28 lg:h-28 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={react} alt="" />
                       </div> 
                  </div>      
 
                   {/*TOOLS*/}
-                  <div className="pt-32 pl-10 text-4xl font-extrabold text">              
-                        <h2 className='franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Tools</h2>
+                  <div className="pt-32 pl-10  font-extrabold">              
+                        <h2 className='lg:text-6xl text-4xl franklin text-infor'> <span className='text-2xl text text-ligth'>//</span> Tools</h2>
                 </div>
 
                 <div className='w-11/12 pt-16 m-auto text-justify'>
-                    <div><h2 className='text-xs font-medium text-white franklin'>Lorem ipsum dolor,<br /> 
+                    <div><h2 className='text-xs lg:text-xl font-medium text-white franklin'>Lorem ipsum dolor,<br /> 
                     sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
                 </div>
 
-                <div className="grid grid-cols-3 p-5 pt-10 justify-items-center">
-                                <div><img className="w-16 h-16 duration-75 active:scale-125" src={github} alt="" />
+                <div className="grid grid-cols-3 p-5 pt-10 lg:pb-20 justify-items-center">
+                                <div><img className="lg:w-24 lg:h-24 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={github} alt="" />
                                  </div>
-                                <div><img className="w-16 h-16 duration-75 active:scale-125" src={git} alt="" />
+                                <div><img className="lg:w-24 lg:h-24 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={git} alt="" />
                                     </div>
-                                <div className=''><img className="w-16 h-16 duration-75 hover:scale-125" src={tailwind} alt="" />
+                                <div className=''><img className="lg:w-24 lg:h-24 w-16 h-16 duration-75 active:scale-125 lg:hover:scale-125" src={tailwind} alt="" />
                                     </div>
                             </div>
 
@@ -58,6 +60,7 @@ function Briefcase() {
                        
                        
         </div> 
+        <Footer />  
                     
                 
         {/* PROYECTOS */}
