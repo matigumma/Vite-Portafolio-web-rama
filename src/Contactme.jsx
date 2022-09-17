@@ -1,11 +1,12 @@
 import Footer from "./Footer"
 import Navbar_responsive from "./Nav-bar-responsive"
+import { motion } from "framer-motion"
 const Contactme = () => {
     return(
         <>
               <Navbar_responsive />
             <div className="pt-20 bg-gradient-to-b from-dark to-obscure">          
-                 <form className="ml-3 form-control justify-center">
+                 <form className="justify-center ml-3 form-control">
                     <label className="label">
                         <span className="label-text text-ligth franklin">What is your name?</span>
                         
@@ -25,11 +26,17 @@ const Contactme = () => {
                     <input type="text" placeholder="Subjet" className="max-w-sm input input-bordered input-lg focus:border-infor" />
 
                     <textarea  className= "max-w-sm mt-10 border-secondary textarea textarea-ghost focus:border-infor" placeholder="Message"></textarea>
-                    <button className="mt-10 self-start px-10 btn btn-sm md:btn-md lg:btn-lg">Submit</button>
+                    <button className="self-start px-10 mt-10 btn btn-sm md:btn-md lg:btn-lg">Submit</button>
                 </form>               
              
             </div>
-            <Footer />  
+            <motion.div
+     initial={{ opacity: 0 }}
+     whileInView={{ opacity: 1 }}
+     viewport={{ once: true }}
+    >         
+        <Footer />
+    </motion.div>  
         </>   
     )}
 export default Contactme

@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import logo from './img/logo.png';
 
 
+
 const Navbar_responsive = () =>{
     return(
       <>
+      {/* NAV MOBILE */}
         <div className="fixed w-full md:hidden">
     <div className="navbar">
     <div className=" navbar-start">
@@ -25,8 +27,6 @@ const Navbar_responsive = () =>{
   </div>
   </div>
 
-  
-
   {/* Nav Desktop */}
 
   <div className='fixed top-0 left-0 w-full pr-5 text-sm font-bold text-white franklin right-20 md-m:hidden'>
@@ -42,4 +42,6 @@ const Navbar_responsive = () =>{
   )
 }
 export default Navbar_responsive
+  
+
 
