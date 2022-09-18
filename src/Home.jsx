@@ -40,7 +40,10 @@ return(
         
    
                 <div className='w-11/12 p-5 ml-10 text-white pt-72'>                 
-                <p className='text-4xl italic font-bold lg:text-8xl franklin'>{text}</p>             
+                <h2 className='text-4xl italic font-bold lg:text-8xl franklin'>
+                   <span>{text}</span>
+                   <Cursor cursorColor='#57F27E' cursorStyle='/>'/>
+                    </h2>             
                 <h2 className='pb-20 text-4xl font-bold lg:text-8xl franklin'> 
                 I'm <span className='text-infor'>Ramiro Gumma</span> </h2>
                 <h2 className='pb-48 lg:text-2xl text-md inconsolota'>I'm a <span className='text-infor'>Front-End Developer</span> - Based in Buenos Aires</h2>
