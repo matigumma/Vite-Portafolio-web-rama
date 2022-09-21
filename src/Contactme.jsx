@@ -5,13 +5,28 @@ const Contactme = () => {
     return(
         <>
               <Navbar_responsive />
-            <div className="pt-20 bg-gradient-to-b from-dark to-obscure">         
-            <div className="min-h-screen hero">
+
+              
+            <motion.div
+                      
+            className="pt-20 bg-gradient-to-b from-obscure to-dark min-h-screen hero">         
+       
   <div className="flex-col hero-content lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
+    <motion.div
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{
+      default: {
+        duration: 0.3,
+        ease: [0, 0.71, 0.2, 1.01]
+      },
+      scale: {
+        type: "just",
+      }
+    }}  className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Contactame para trabajar con migo!</h1>
       <p className="py-6">En este medio podran mandarme mail directo a mi casilla de hotmail.</p>
-    </div>
+    </motion.div>
     <div className="flex-shrink-0 w-full max-w-sm shadow-2xl card bg-base-100">
       <div className="card-body">
         <div className="form-control">
@@ -39,7 +54,6 @@ const Contactme = () => {
       </div>
     </div>
   </div>
-</div>
 
 
 
@@ -64,7 +78,7 @@ const Contactme = () => {
                     <button className="self-start px-10 mt-10 btn btn-sm md:btn-md lg:btn-lg">Submit</button>
                 </form>                */}
              
-            </div>
+            </motion.div>
             <motion.div
      initial={{ opacity: 0 }}
      whileInView={{ opacity: 1 }}

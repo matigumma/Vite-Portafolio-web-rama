@@ -6,7 +6,19 @@ function Aboutme () {
     return(
         <>
         < Navbar_responsive />
-        <div className="pb-20 bg-gradient-to-b from-dark to-obscure">
+        <section className="bg-gradient-to-b from-obscure to-dark">
+        <motion.div
+        initial={{
+            y: -100,
+            opacity: 0
+        }}
+        transition={{ duration: 1.2 }}
+        whileInView={{
+            opacity: 1,
+            y: 0
+     }}
+        viewport={{ once: true }}
+         className="py-5 ">
             <div className="grid w-full grid-cols-3 pt-20 lg:pt-5 justify-items-center ">         
                 <div className="col-span-2 pt-20 lg:self-end "><h2 className="text-4xl font-extrabold text-center text-white lg:text-6xl franklin">Get to <span className="text-infor">know me better</span> </h2></div>
                 <div className="m-5 justify-self-center lg:pt-20 lg:row-span-2">
@@ -28,15 +40,10 @@ function Aboutme () {
                                 
                     </div>
             </div>
-        </div>
-
-        <motion.div
-     initial={{ opacity: 0 }}
-     whileInView={{ opacity: 1 }}
-     viewport={{ once: true }}
-    >         
-        <Footer />
-    </motion.div>  
+        </motion.div>       
+       </section>
+       <Footer />
+ 
         </>
     )}
 

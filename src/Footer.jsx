@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from './img/logo.png'
+
 
 const Footer = () => {
     return(
     <>
-    <footer className="w-full p-10 pt-20 footer text-base-content bg-gradient-to-b from-obscure to-primary ">
+    <motion.footer  
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{duration: 1}}
+    viewport={{ once: true }}
+    className="w-full p-10 pt-20 footer text-base-content bg-gradient-to-b from-obscure to-primary ">
     <div>
         <img src={logo} className="w-16 h-20"/>                    
         <p>Copyright © 2022 - All right reserved by Ramiro Gumma <span className='text-primary'>|</span>Designed by Josefina Ritter</p>
@@ -22,7 +29,7 @@ const Footer = () => {
         <a href='https://github.com/Hamipluf' target="BLANK"className="links">Github</a> 
         <a href='https://www.workana.com/freelancer/b85e703950de6afa717ace9a8327c73a' target="BLANK"className="links">Workana</a>
     </div>
-</footer>
+</motion.footer>
 </>
 )}
 

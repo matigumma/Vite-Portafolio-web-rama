@@ -18,7 +18,18 @@ function Briefcase() {
     return (
         <>
         <Navbar_responsive />
-        <div className='bg-gradient-to-b from-dark to-obscure'>
+        <section className='bg-gradient-to-b from-obscure to-dark'>
+        <motion.div 
+        initial={{
+            y: -100,
+            opacity: 0
+        }}
+        transition={{ duration: 1.2 }}
+        whileInView={{
+            opacity: 1,
+            y: 0
+     }}
+        viewport={{ once: true }}>
             
                 {/*SLILLS*/}
               
@@ -27,7 +38,7 @@ function Briefcase() {
                 </div>
 
                 <div className='w-11/12 pt-16 m-auto text-justify'>
-                    <p className='text-xs font-medium leading-relaxed text-white lg:text-xl franklin'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam eum natus perferendis similique tempora quod, modi odit repellendus laboriosam dicta, quam vel molestias odio, doloribus ad illum nesciunt placeat..</p>
+                    <p className='text-xs font-medium leading-relaxed text-white lg:text-xl franklin'>Lenguajes de front-end con los que trabajo.</p>
                 </div>                   
                         
                  <div className="grid grid-cols-2 gap-5 pt-10 gap-y-10 justify-items-center">
@@ -48,8 +59,7 @@ function Briefcase() {
                         </div>
 
                         <div className='w-11/12 pt-16 m-auto text-justify'>
-                            <div><h2 className='text-xs font-medium text-white lg:text-xl franklin'>Lorem ipsum dolor,<br /> 
-                            sit amet consectetur adipisicing elit. Obcaecati, laboriosam eos. Ut deserunt sint, consectetur nesciunt facilis, totam quo iusto iste odit dignissimos, possimus aut consequatur pariatur eum ducimus earum.</h2></div>
+                            <div><p className='text-xs font-medium text-white lg:text-xl franklin'>Tecnologias de desarrollo </p></div>
                         </div>
                         
                         <div className="grid grid-cols-3 p-5 pt-10 lg:pb-20 justify-items-center">
@@ -63,14 +73,10 @@ function Briefcase() {
 
                        
                        
-        </div> 
-        <motion.div
-     initial={{ opacity: 0 }}
-     whileInView={{ opacity: 1 }}
-     viewport={{ once: true }}
-    >         
+        </motion.div>   
+        </section>            
         <Footer />
-    </motion.div>  
+ 
                     
                 
         {/* PROYECTOS */}
